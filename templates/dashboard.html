@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <title>Leaflet and Folium Map with Flask</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-sand w3-container">
+
+<div class="w3-panel w3-blue w3-round">
+    <h1 class="w3-center">
+        <img src="{{ url_for('static', filename='images/placeholder_red.png') }}" width="50" height="50">
+        Feature Management Dashboard
+        <img src="{{ url_for('static', filename='images/placeholder_black.png') }}" width="50" height="50">
+    </h1>
+</div>
+
+<div id="add-feature-form" class="w3-modal">
+    <div class="w3-modal-content w3-round">
+        <div class="w3-container">
+            <div class="w3-panel w3-blue w3-round">
+                <h3 class="w3-center">
+                    <img src="{{ url_for('static', filename='images/placeholder_red.png') }}" width="30" height="30">
+                    Add Feature
+                    <img src="{{ url_for('static', filename='images/placeholder_black.png') }}" width="30" height="30">
+                </h3>
+            </div>
+
+            <form id="add_feature_form" class="w3-row-padding w3-section w3-stretch">
+
+                <div class="w3-half w3-section">
+                    <label for="name"><strong>Name:</strong></label>
+                    <input class="w3-input w3-border w3-round w3-light-grey" type="text" placeholder="Name"
+                           id="name" name="name" required>
+                </div>
+
+                <div class="w3-half w3-section">
+                    <label for="address"><strong>Address:</strong></label>
+                    <input class="w3-input w3-border w3-round w3-light-grey" type="text" placeholder="Address"
+                           id="address" name="address" required>
+                </div>
+
+                <div class="w3-half w3-section">
+                    <label for="latitude"><strong>Latitude:</strong></label>
+                    <input class="w3-input w3-border w3-round w3-light-grey" type="number" placeholder="Latitude"
+                           id="latitude" name="latitude" step="any" required>
+                </div>
+
+                <div class="w3-half w3-section">
+                    <label for="longitude"><strong>Longitude:</strong></label>
+                    <input class="w3-input w3-border w3-round w3-light-grey" type="number" placeholder="Longitude"
+                           id="longitude" name="longitude" step="any" required>
+                </div>
+
+                <div class="w3-third w3-section">
+                    <button type="submit" class="w3-button w3-block w3-round w3-border w3-green">
+                        <strong>Submit Form</strong>
+                    </button>
+                </div>
+                <div class="w3-third w3-section">
+                    <button type="reset" class="w3-button w3-block w3-round w3-border w3-blue">
+                        <strong>Clear Form</strong>
+                    </button>
+                </div>
+                <div class="w3-third w3-section">
+                    <button type="button" class="w3-button w3-block w3-round w3-border w3-red"
+                            onclick="document.getElementById('add-feature-form').style.display='none'">
+                        <strong>Close Form</strong>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-section w3-stretch">
+    <div class="w3-half">
+        <input class="w3-input w3-border w3-round w3-light-grey w3-center" type="text"
+               placeholder="&#128270; Search Feature &#128269;" onkeyup="search_place()" id="search_input">
+    </div>
+    <div class="w3-half">
+        <button class="w3-button w3-block w3-round w3-border w3-light-grey"
+                onclick="document.getElementById('add-feature-form').style.display='block'">
+            <strong>&#43; Add Feature &#43;</strong>
+        </button>
+    </div>
+</div>
+
+<table class="w3-table-all w3-hoverable" id="features-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th title="(longitude/latitude)">Coordinates</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+</body>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<script>
+function search_place() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("search_input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("features-table");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+</html>

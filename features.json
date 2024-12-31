@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "1": {
+      "key": "id_counter",
+      "value": 21
+    }
+  },
+  "features": {
+    "1": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["72.8777", "19.0760"]
+      },
+      "properties": {
+        "name": "Mumbai",
+        "address": "Mumbai"
+      },
+      "id": 1
+    },
+    "2": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.1025", "28.7041"]
+      },
+      "properties": {
+        "name": "Delhi",
+        "address": "Delhi"
+      },
+      "id": 2
+    },
+    "3": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.5946", "12.9716"]
+      },
+      "properties": {
+        "name": "Bangalore",
+        "address": "Bangalore"
+      },
+      "id": 3
+    },
+    "4": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["88.3639", "22.5726"]
+      },
+      "properties": {
+        "name": "Kolkata",
+        "address": "Kolkata"
+      },
+      "id": 4
+    },
+    "5": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["80.2707", "13.0827"]
+      },
+      "properties": {
+        "name": "Chennai",
+        "address": "Chennai"
+      },
+      "id": 5
+    },
+    "6": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["78.4867", "17.3850"]
+      },
+      "properties": {
+        "name": "Hyderabad",
+        "address": "Hyderabad"
+      },
+      "id": 6
+    },
+    "7": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["73.8567", "18.5204"]
+      },
+      "properties": {
+        "name": "Pune",
+        "address": "Pune"
+      },
+      "id": 7
+    },
+    "8": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["72.5714", "23.0225"]
+      },
+      "properties": {
+        "name": "Ahmedabad",
+        "address": "Ahmedabad"
+      },
+      "id": 8
+    },
+    "9": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["75.7873", "26.9124"]
+      },
+      "properties": {
+        "name": "Jaipur",
+        "address": "Jaipur"
+      },
+      "id": 9
+    },
+    "10": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["72.8311", "21.1702"]
+      },
+      "properties": {
+        "name": "Surat",
+        "address": "Surat"
+      },
+      "id": 10
+    },
+    "11": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["80.9462", "26.8467"]
+      },
+      "properties": {
+        "name": "Lucknow",
+        "address": "Lucknow"
+      },
+      "id": 11
+    },
+    "12": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["80.3319", "26.4499"]
+      },
+      "properties": {
+        "name": "Kanpur",
+        "address": "Kanpur"
+      },
+      "id": 12
+    },
+    "13": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["79.0882", "21.1458"]
+      },
+      "properties": {
+        "name": "Nagpur",
+        "address": "Nagpur"
+      },
+      "id": 13
+    },
+    "14": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["75.8577", "22.7196"]
+      },
+      "properties": {
+        "name": "Indore",
+        "address": "Indore"
+      },
+      "id": 14
+    },
+    "15": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["72.9780", "19.2183"]
+      },
+      "properties": {
+        "name": "Thane",
+        "address": "Thane"
+      },
+      "id": 15
+    },
+    "16": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.4126", "23.2599"]
+      },
+      "properties": {
+        "name": "Bhopal",
+        "address": "Bhopal"
+      },
+      "id": 16
+    },
+    "17": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["83.2185", "17.6868"]
+      },
+      "properties": {
+        "name": "Visakhapatnam",
+        "address": "Visakhapatnam"
+      },
+      "id": 17
+    },
+    "18": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["73.1812", "22.3072"]
+      },
+      "properties": {
+        "name": "Vadodara",
+        "address": "Vadodara"
+      },
+      "id": 18
+    },
+    "19": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["85.1376", "25.5941"]
+      },
+      "properties": {
+        "name": "Patna",
+        "address": "Patna"
+      },
+      "id": 19
+    },
+    "20": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["75.8573", "30.9000"]
+      },
+      "properties": {
+        "name": "Ludhiana",
+        "address": "Ludhiana"
+      },
+      "id": 20
+    }
+  }
+}
